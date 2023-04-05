@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+        practical-3_form
+    </title>
+</head>
+
+<body>
+    <form>
+        <label>User_name : </label><br>
+        <input type="text" name="user_name" id="user_name" placeholder="enter your 
+name" required><br><br>
+        <label> Age :</label><br>
+        <input type="age" id="age" placeholder="enter your age" required><br><br>
+        <label> Confirm_age :</label>
+        <input type="age" id="c_age" placeholder="confirm your age" required><br><br>
+        <label> Email :</label>
+        <input type="email" id="email" placeholder="enter your email" required><br><br>
+        <button type="button" onclick="myfunction()" id="demo"> submit </button>
+    </form>
+    <script>
+        function myfunction() {
+            let user_name = document.getElementById("user_name").value;
+            let age = document.getElementById("age").value;
+            let c_age = document.getElementById("c_age").value;
+            let email = document.getElementById("email").value;
+            if (age == c_age) {
+                alert("your name is " + user_name + " and your age is " + age + " and your email is " + email);
+                if (age => 18) {
+                    alert("you are eligible for voting");
+                }
+                else {
+                    alert("you are not eligible for voting");
+                }
+            }
+            else {
+                alert("your age is not matching");
+            }
+        }
+    </script>
+</body>
+
+</html>

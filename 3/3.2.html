@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CoWin Registration</title>
+</head>
+<style>
+  body{
+    background-color: darkcyan;
+  }
+a.nn{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+</style>
+<body>
+  <form>
+    <label for="nationality"><a class="nn"id="nn">Nationality:</a></label>
+    <input type="text" id="nationality" name="nationality"><br>
+    <label for="vaccines"><a class="nn"id="nn">Number of Vaccines Received:</a></label>
+    <input type="number" id="vaccines" name="vaccines"><br>
+    <input type="button" value="Submit" onclick="checkVaccines()">
+  </form>
+  <p id="error"></p>
+  <script>
+    function checkVaccines() {
+      var vaccines = document.getElementById("vaccines").value;
+      if (vaccines < 1) {
+        document.getElementById("error").innerHTML = "you have to vaccianated at least 1 dose to enter the portal";
+        alert("you are not eligible for vaccination");
+      } else {
+        window.location.href = "https://www.cowin.gov.in/";
+      }
+    }
+  </script>
+</body>
+
+</html>
