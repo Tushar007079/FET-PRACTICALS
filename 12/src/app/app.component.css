@@ -1,0 +1,41 @@
+.waviy {
+    position: relative;
+    margin-bottom: 0%;
+  font-family: 'Lobster', cursive;
+
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Monoton&family=Roboto+Slab&family=Roboto:wght@100;900&display=swap');
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+    
+  }
+  .waviy h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    color: #fff;    
+    
+  }
+  .waviy p{
+    font-size: 70px;
+  font-family: 'Lobster', cursive;
+
+  }
+  .waviy h2{
+    font-family: 'Cinzel Decorative', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-style: unset;
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
