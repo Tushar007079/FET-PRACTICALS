@@ -1,0 +1,21 @@
+<html>
+    <body>
+             
+    <div class="item">
+        <h2 class="title">Our Employees</h2>
+    </div>
+    <div class="employees-container">
+      <div *ngFor="let employee of employees" class="employee-card">
+        <div class="employee-avatar">
+          <img src="https://randomuser.me/api/portraits/women/{{ employee.id }}.jpg">
+        </div>
+        <div class="employee-info">
+          <h3 class="employee-name">{{ employee.name }}</h3>
+          <p class="employee-title">{{ employee.role }}</p>
+        </div>
+      </div>
+    </div>
+
+    
+    </body>
+</html>
